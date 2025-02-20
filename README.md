@@ -1,4 +1,4 @@
-# 🚀 Milestone 3: Automating ETL with Apache Airflow & Elasticsearch
+# Automating ETL with Apache Airflow & Elasticsearch
 
 ## 📌 Project Overview
 This project automates the **ETL (Extract, Transform, Load)** pipeline using **Apache Airflow** to process and ingest data from **PostgreSQL** into **Elasticsearch**. The dataset used in this project is from **Balaji Fast Food Sales**, which contains transactional sales records. The goal is to efficiently manage and analyze large-scale sales data by leveraging **Airflow for orchestration** and **Elasticsearch for fast retrieval & analytics**.
@@ -103,10 +103,6 @@ curl -X GET "localhost:9200/milestone3_clean_data/_search?pretty"
 ✅ **Automated ETL process** ensures efficient data extraction, transformation, and ingestion.  
 ✅ **Elasticsearch improves query performance** for fast retrieval of sales data.  
 ✅ **Scalable solution** that can handle growing data volumes without performance degradation.  
-
----
-## 📄 License
-This project is for **educational and research purposes**.
 
 ---
 ## 👤 Author
