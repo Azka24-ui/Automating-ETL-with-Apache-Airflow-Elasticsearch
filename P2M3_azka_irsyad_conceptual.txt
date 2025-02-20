@@ -1,0 +1,103 @@
+---------------------------------------------
+
+1. Jelaskan apa yang dimaksud dengan NoSQL menggunakan pemahaman yang kalian ketahui !
+
+    = NoSQL lebih fleksibel karena bisa menyimpan data dalam berbagai format, seperti dokumen (JSON, BSON), key-value, graph, 
+
+---------------------------------------------
+
+2. Jelaskan kapan harus menggunakan NoSQL dan Relational Database Management System !
+
+    Gunakan NoSQL :       
+
+    - Data Tidak Terstruktur atau Semi-Terstruktur
+    - Butuh Skalabilitas Tinggi dan Akses Cepat
+    - Butuh Skalabilitas Tinggi dan Akses Cepat
+    
+    Gunakan RDBMS (SQL) :
+
+    - Data Terstruktur dan Hubungan Antar Data Jelas
+    - Butuh Konsistensi Data yang Ketat
+    - Kebutuhan Query yang Kompleks
+
+    kesimpulan : 
+
+    - Gunakan NoSQL jika projek yang kita kerjakan membutuhkan fleksibilitas, skalabilitas tinggi, dan bisa menangani data yang cepat berubah.
+    - Gunakan RDBMS (SQL) jika butuh keakuratan tinggi, konsistensi data, dan hubungan antar tabel yang kuat.
+
+---------------------------------------------------
+
+3. Sebutkan contoh 2 tools/platform NoSQL selain ElasticSearch beserta keunggulan tools/platform tersebut !
+
+    1. MongoDB
+        - Performanya cepat > Karena menggunakan indexing dan caching yang efisien.
+        - Mudah diperbesar kalau datanya makin banyak (cocok buat startup atau aplikasi yang berkembang).
+        - Cepat dan ringan buat aplikasi modern seperti e-commerce atau media sosial.
+            - contoh penggunanaan : 
+                - toko online dan aplikasi berita
+
+    2. Apache Cassandra
+        - Tidak gampang down karena datanya otomatis disalin ke beberapa server.
+        - Cocok buat data yang terus bertambah cepat (misalnya data chat atau transaksi).
+        - Bisa menangani jutaan data per detik tanpa lemot.
+            - contoh penggunaan :
+                - facebook , netflix
+
+---------------------------------------------------
+
+4. Jelaskan apa yang Anda ketahui dari Airflow menggunakan pemahaman dan bahasa Anda sendiri 
+
+    Apache Airflow itu seperti asisten otomatis yang membantu menjalankan tugas-tugas data secara terjadwal dan berurutan. Bayangkan kalau kita punya banyak kerjaan yang harus dilakukan setiap hari, misalnya:
+
+    - Ambil data dari API atau database
+    - disurug ngebersihin dan olah datanya
+    - Simpan hasilnya ke tempat lain (misalnya database atau cloud storage)
+    - Kirim laporan atau notifikasi kalau tugasnya sudah selesai
+
+    Kalau dikerjakan manual, pasti ribet dan kadang lupa Nah, Airflow membantu mengatur semua proses ini secara otomatis
+
+    kenapa ? di airflow ini kita bisa :
+
+    - Bisa menjadwalkan tugas otomatis > Misalnya, jalankan skrip setiap jam atau setiap hari.
+    - Mudah melihat alur kerja (workflow) > Semua tugas bisa dilihat dalam bentuk diagram, jadi lebih gampang dipahami.
+    - Bisa menangani banyak tugas sekaligus > Cocok untuk proyek data yang besar, seperti ETL (Extract, Transform, Load).
+
+    Jadi, Airflow itu semacam “pengatur lalu lintas” untuk tugas-tugas otomatis dalam dunia data
+
+-------------------------------------------------------
+
+5. Jelaskan apa yang Anda ketahui dari Great Expectations menggunakan pemahaman dan bahasa Anda sendiri !
+
+    = Great Expectations itu seperti “quality control” untuk data, membantu mengecek dan memastikan kualitas data sebelum digunakan.
+
+    Great Expectations ngapain aja sih ?
+    - Memeriksa apakah data sesuai aturan yang kamu tentukan
+    - Mengecek apakah ada data yang hilang atau aneh
+    
+    jadi si great expectation ini berguna untuk :
+
+    - Membantu menghindari kesalahan data sebelum masuk ke analisis atau machine learning.
+    - Bisa digunakan secara otomatis dalam pipeline data (misalnya di Airflow).
+    - Membuat dokumentasi tentang data secara real-time > Jadi tim lain juga bisa paham kondisi datanya.
+
+--------------------------------------------------------
+
+6. Jelaskan apa yang Anda ketahui dari Batch Processing menggunakan pemahaman dan bahasa Anda sendiri (Definisi, Contoh Kasus Penggunaan, Tools, dll)
+
+    Batch Processing adalah metode pemrosesan data dalam jumlah besar yang dilakukan secara berkala (tidak real-time). Data dikumpulkan terlebih dahulu, lalu diproses sekaligus pada waktu tertentu.
+
+    Bayangan saya kita punya tugas mencatat semua transaksi penjualan di toko selama satu hari. Daripada ngeproses tiap transaksi langsung saat itu juga, saya bisa mengumpulkan semua transaksi dulu dan memprosesnya sekaligus di malam hari. Itusih yang saya tangkap di batch processing!
+
+    contoh penggunaan : 
+    - Bank > Mengupdate saldo rekening pelanggan setiap malam.
+    - E-commerce > Menghitung total penjualan harian dan mengupdate stok.
+    - Payroll > Menghitung gaji karyawan setiap akhir bulan. 
+
+    Tools : 
+    - Apache Spark, Hadoop, Airflow, AWS Batch, SQL Queries
+
+    Singkatnya, Batch Processing memproses data dalam jumlah besar secara terjadwal untuk efisiensi dan performa lebih baik! 
+
+-----------------------------------------------------------
+
+ 

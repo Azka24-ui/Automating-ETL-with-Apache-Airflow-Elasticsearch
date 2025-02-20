@@ -1,0 +1,28 @@
+[2025-02-10T08:25:46.293+0000] {taskinstance.py:1171} INFO - Dependencies all met for <TaskInstance: pipeline_milestone_3.extract_data manual__2025-02-10T08:25:45.287625+00:00 [queued]>
+[2025-02-10T08:25:46.297+0000] {taskinstance.py:1171} INFO - Dependencies all met for <TaskInstance: pipeline_milestone_3.extract_data manual__2025-02-10T08:25:45.287625+00:00 [queued]>
+[2025-02-10T08:25:46.297+0000] {taskinstance.py:1368} INFO - 
+--------------------------------------------------------------------------------
+[2025-02-10T08:25:46.297+0000] {taskinstance.py:1369} INFO - Starting attempt 1 of 1
+[2025-02-10T08:25:46.297+0000] {taskinstance.py:1370} INFO - 
+--------------------------------------------------------------------------------
+[2025-02-10T08:25:46.303+0000] {taskinstance.py:1389} INFO - Executing <Task(PythonOperator): extract_data> on 2025-02-10 08:25:45.287625+00:00
+[2025-02-10T08:25:46.306+0000] {standard_task_runner.py:52} INFO - Started process 412 to run task
+[2025-02-10T08:25:46.308+0000] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'pipeline_milestone_3', 'extract_data', 'manual__2025-02-10T08:25:45.287625+00:00', '--job-id', '13', '--raw', '--subdir', 'DAGS_FOLDER/P2M3_azka_irsyad_DAG.py', '--cfg-path', '/tmp/tmp4mpiwtch', '--error-file', '/tmp/tmpdya32clx']
+[2025-02-10T08:25:46.309+0000] {standard_task_runner.py:80} INFO - Job 13: Subtask extract_data
+[2025-02-10T08:25:46.342+0000] {task_command.py:371} INFO - Running <TaskInstance: pipeline_milestone_3.extract_data manual__2025-02-10T08:25:45.287625+00:00 [running]> on host c7bd35cc3dd3
+[2025-02-10T08:25:46.381+0000] {taskinstance.py:1583} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=Azka
+AIRFLOW_CTX_DAG_ID=pipeline_milestone_3
+AIRFLOW_CTX_TASK_ID=extract_data
+AIRFLOW_CTX_EXECUTION_DATE=2025-02-10T08:25:45.287625+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2025-02-10T08:25:45.287625+00:00
+[2025-02-10T08:25:46.387+0000] {base.py:68} INFO - Using connection ID '172.18.0.2' for task execution.
+[2025-02-10T08:25:46.433+0000] {logging_mixin.py:115} INFO -    order_id       date item_name  ... unnamed_10 unnamed_11  unnamed_12
+0         2  8/23/2022   Vadapav  ...       None       None        None
+
+[1 rows x 13 columns]
+[2025-02-10T08:25:46.447+0000] {python.py:173} INFO - Done. Returned value was: None
+[2025-02-10T08:25:46.460+0000] {taskinstance.py:1412} INFO - Marking task as SUCCESS. dag_id=pipeline_milestone_3, task_id=extract_data, execution_date=20250210T082545, start_date=20250210T082546, end_date=20250210T082546
+[2025-02-10T08:25:46.490+0000] {local_task_job.py:156} INFO - Task exited with return code 0
+[2025-02-10T08:25:46.508+0000] {local_task_job.py:279} INFO - 1 downstream tasks scheduled from follow-on schedule check

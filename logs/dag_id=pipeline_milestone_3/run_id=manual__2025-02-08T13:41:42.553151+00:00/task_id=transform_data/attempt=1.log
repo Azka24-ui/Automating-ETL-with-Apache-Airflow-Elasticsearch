@@ -1,0 +1,23 @@
+[2025-02-08T13:41:46.636+0000] {taskinstance.py:1171} INFO - Dependencies all met for <TaskInstance: pipeline_milestone_3.transform_data manual__2025-02-08T13:41:42.553151+00:00 [queued]>
+[2025-02-08T13:41:46.644+0000] {taskinstance.py:1171} INFO - Dependencies all met for <TaskInstance: pipeline_milestone_3.transform_data manual__2025-02-08T13:41:42.553151+00:00 [queued]>
+[2025-02-08T13:41:46.644+0000] {taskinstance.py:1368} INFO - 
+--------------------------------------------------------------------------------
+[2025-02-08T13:41:46.644+0000] {taskinstance.py:1369} INFO - Starting attempt 1 of 1
+[2025-02-08T13:41:46.644+0000] {taskinstance.py:1370} INFO - 
+--------------------------------------------------------------------------------
+[2025-02-08T13:41:46.652+0000] {taskinstance.py:1389} INFO - Executing <Task(PythonOperator): transform_data> on 2025-02-08 13:41:42.553151+00:00
+[2025-02-08T13:41:46.658+0000] {standard_task_runner.py:52} INFO - Started process 1477 to run task
+[2025-02-08T13:41:46.660+0000] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'pipeline_milestone_3', 'transform_data', 'manual__2025-02-08T13:41:42.553151+00:00', '--job-id', '51', '--raw', '--subdir', 'DAGS_FOLDER/ml_pipeline.py', '--cfg-path', '/tmp/tmp5c736p55', '--error-file', '/tmp/tmp7e5hp_ly']
+[2025-02-08T13:41:46.661+0000] {standard_task_runner.py:80} INFO - Job 51: Subtask transform_data
+[2025-02-08T13:41:46.710+0000] {task_command.py:371} INFO - Running <TaskInstance: pipeline_milestone_3.transform_data manual__2025-02-08T13:41:42.553151+00:00 [running]> on host fac8a5123a60
+[2025-02-08T13:41:46.782+0000] {taskinstance.py:1583} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=Azka
+AIRFLOW_CTX_DAG_ID=pipeline_milestone_3
+AIRFLOW_CTX_TASK_ID=transform_data
+AIRFLOW_CTX_EXECUTION_DATE=2025-02-08T13:41:42.553151+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2025-02-08T13:41:42.553151+00:00
+[2025-02-08T13:41:46.916+0000] {python.py:173} INFO - Done. Returned value was: None
+[2025-02-08T13:41:46.956+0000] {taskinstance.py:1412} INFO - Marking task as SUCCESS. dag_id=pipeline_milestone_3, task_id=transform_data, execution_date=20250208T134142, start_date=20250208T134146, end_date=20250208T134146
+[2025-02-08T13:41:47.003+0000] {local_task_job.py:156} INFO - Task exited with return code 0
+[2025-02-08T13:41:47.112+0000] {local_task_job.py:279} INFO - 1 downstream tasks scheduled from follow-on schedule check

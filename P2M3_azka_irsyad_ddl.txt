@@ -1,0 +1,21 @@
+# Url Dataset
+
+https://www.kaggle.com/datasets/ahmedhalimo/balaji-fast-food-sales
+
+#Pembuatan table_m3
+
+CREATE TABLE table_m3 (
+    order_id SERIAL PRIMARY KEY,
+    date TEXT NOT NULL,
+    item_name TEXT NOT NULL,
+    item_type TEXT NOT NULL,
+    item_price TEXT NOT NULL,  
+    quantity INTEGER NOT NULL,
+    transaction_amount TEXT NOT NULL, 
+    transaction_type TEXT NOT NULL,
+    received_by TEXT NOT NULL,
+    time_of_sale TEXT NOT NULL,
+    unnamed_10 TEXT,  
+    unnamed_11 TEXT,  
+    unnamed_12 TEXT   
+);
